@@ -60,6 +60,7 @@ streamlit run app.py
 http://localhost:8501
 ```
 
+<<<<<<< HEAD
 ## 📁 Project Structure
 ```
 bert-text-summarizer/
@@ -103,3 +104,7 @@ bert-text-summarizer/
   "summary": "Most important sentences extracted from the text."
 }
 ```
+=======
+## 📦 Model
+Hosted on Hugging Face: https://huggingface.co/aasifali4813/bert-summarizer
+>>>>>>> 53c48481cdfa94b0f7fcf37e67e6082ec9d2133d
