@@ -1,9 +1,8 @@
-
 import os
 import streamlit as st
 import requests
 
-BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
+BACKEND_URL = os.getenv("BACKEND_URL", "https://bert-text-summarizer.onrender.com")
 
 st.set_page_config(page_title="BERT Summarizer", page_icon="📝")
 st.title("📝 BERT Text Summarizer")
