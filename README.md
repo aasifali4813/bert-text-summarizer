@@ -11,7 +11,7 @@ Extractive text summarization using BERT embeddings + KMeans clustering.
 
 ## 🚀 Setup
 
-git clone https://github.com/YOUR_USERNAME/bert-text-summarizer.git
+git clone https://github.com/aasifali4813/bert-text-summarizer.git
 cd bert-text-summarizer
 python3 -m venv venv
 source venv/bin/activate
@@ -30,4 +30,4 @@ streamlit run app.py
 Open: http://localhost:8501
 
 ## 📦 Model
-Hosted on Hugging Face: https://huggingface.co/YOUR_HF_USERNAME/bert-summarizer
+Hosted on Hugging Face: https://huggingface.co/aasifali4813/bert-summarizer
