@@ -1,7 +1,8 @@
 from sentence_transformers import SentenceTransformer
 import numpy as np
 
-model = SentenceTransformer("aasifali4813/bert-summarizer")
+
+model = SentenceTransformer("../model")
 
 def summarize_text(text: str, num_sentences: int = 3) -> str:
     sentences = [s.strip() for s in text.split('.') if s.strip()]
