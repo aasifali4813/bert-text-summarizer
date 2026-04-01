@@ -5,16 +5,24 @@ An extractive text summarization system that uses BERT sentence embeddings to id
 ## 🔗 Links
 - 🤗 **HuggingFace Model:** [aasifali4813/bert-summarizer](https://huggingface.co/aasifali4813/bert-summarizer)
 - 💻 **GitHub Repo:** [aasifali4813/bert-text-summarizer](https://github.com/aasifali4813/bert-text-summarizer)
+- 🚀 **Live Backend:** [bert-text-summarizer.onrender.com](https://bert-text-summarizer.onrender.com)
+
+## 📊 Model Performance (ROUGE Scores)
+| Metric      | Score  | Industry Standard |
+|-------------|--------|-------------------|
+| **ROUGE-1** | 0.5385 | 0.40 - 0.45       |
+| **ROUGE-2** | 0.4583 | 0.17 - 0.21       |
+| **ROUGE-L** | 0.5385 | 0.36 - 0.40       |
 
 ## 🛠️ Tech Stack
-| Component | Technology |
-|-----------|-----------|
-| **Model** | paraphrase-MiniLM-L6-v2 (fine-tuned) |
-| **Backend** | FastAPI |
-| **Frontend** | Streamlit |
-| **Training** | Google Colab (T4 GPU) |
-| **Dataset** | CNN/DailyMail (5000 samples) |
-| **Model Hosting** | Hugging Face Hub |
+| Component   | Technology                           |
+|-----------  |--------------------------------------|
+| **Model**   | paraphrase-MiniLM-L6-v2 (fine-tuned) |
+| **Backend** | FastAPI                              |
+| **Frontend**| Streamlit                            |
+| **Training**| Google Colab (T4 GPU)                |
+| **Dataset** | CNN/DailyMail (5000 samples)         |
+| **Model Hosting** | Hugging Face Hub               |
 
 ## 🧠 How It Works
 ```
@@ -60,7 +68,6 @@ streamlit run app.py
 http://localhost:8501
 ```
 
-<<<<<<< HEAD
 ## 📁 Project Structure
 ```
 bert-text-summarizer/
@@ -70,6 +77,7 @@ bert-text-summarizer/
 ├── frontend/
 │   └── app.py         # Streamlit UI
 ├── model/             # Local model files
+├── evaluate.py        # ROUGE evaluation script
 ├── requirements.txt
 ├── .gitignore
 └── README.md
@@ -83,7 +91,7 @@ bert-text-summarizer/
 - **Loss Function:** MultipleNegativesRankingLoss
 - **HuggingFace:** [aasifali4813/bert-summarizer](https://huggingface.co/aasifali4813/bert-summarizer)
 
-## 🖥️ API Endpoint
+## 🖥️ API Endpoints
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | POST | `/summarize` | Summarize input text |
@@ -104,7 +112,9 @@ bert-text-summarizer/
   "summary": "Most important sentences extracted from the text."
 }
 ```
-=======
-## 📦 Model
-Hosted on Hugging Face: https://huggingface.co/aasifali4813/bert-summarizer
->>>>>>> 53c48481cdfa94b0f7fcf37e67e6082ec9d2133d
+
+## 📝 Evaluation
+Run ROUGE evaluation:
+```bash
+python evaluate.py
+```
